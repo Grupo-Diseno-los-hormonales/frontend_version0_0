@@ -1,4 +1,17 @@
 .cont {
-  height: 100vh; /* Ajusta esto al tamaño que prefieras */
+  /* Ajusta esto al tamaño que prefieras */
   overflow: auto;
 }
+:host {
+  display: block;
+  width: 100%;
+  height: 80px; /* O ajusta al tamaño real que desees */
+  overflow: hidden;
+}
+mat-toolbar {
+  min-height: 64px; /* valor base Material */
+  max-height: 80px;
+  display: flex;
+  align-items: center;
+}
+

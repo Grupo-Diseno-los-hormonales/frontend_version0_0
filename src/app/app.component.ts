@@ -15,7 +15,10 @@ export class AppComponent {
   constructor(private userTypeService: UserTypeService, public router: Router) {
     this.userTypeService.userType$.subscribe(type => this.userType = type);
   }
-
+  isPublicRoute(): boolean {
+    const publicRoutes = ['/selectRole', '/login', '/register'];
+    return publicRoutes.some(path => this.router.url.includes(path));
+  }
   showMedicalHistoryPage: boolean = false;
   navigateToMedicalHistory() {
     this.showMedicalHistoryPage = true;

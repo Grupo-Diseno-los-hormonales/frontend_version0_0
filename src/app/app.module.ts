@@ -129,8 +129,6 @@ export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
 }
 
-;
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -139,13 +137,13 @@ export function HttpLoaderFactory(http: HttpClient) {
     SearchDoctorsComponent,
     SearchPatiensComponent,
     HeaderDoctorComponent,
+    HomeDoctorComponent,
     LanguageSwitcherComponent,
     CalendarViewComponent,
     DoctorChatComponent,
     PatientChatComponent,
     NotificationsViewComponent,
     DoctorProfileComponent,
-    HomeDoctorComponent,
     SelectUserRoleComponent,
     PhotoPatientsComponent,
     InfoProfilePatiensComponent,
